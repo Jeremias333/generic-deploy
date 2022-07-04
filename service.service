@@ -1,0 +1,13 @@
+#!/bin/sh -
+[Unit]
+Description=SERVICE API
+
+[Service]
+WorkingDirectory=/opt/service-api
+ExecStart=/opt/service-api/venv/bin/uvicorn server:app --host 127.0.0.1 --port 8000
+Restart=always
+User=root
+Group=root
+
+[Install]
+WantedBy=multi-user.target
