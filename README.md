@@ -9,7 +9,7 @@ $ sudo certbot --nginx
 
 $ sudo certbot renew --dry-run
 
-$ chmod 660 /etc/systemd/service.service
+$ chmod 660 /etc/systemd/system/service.service
 
 $ sudo systemctl daemon-reload
 
